@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Certifications from "./components/Certifications";
 import Projects from "./components/Projects";
@@ -20,30 +21,42 @@ function Home() {
       <Navbar />
 
       <main>
+        {/* Home */}
         <section id="home">
           <Hero />
         </section>
 
+        {/* About */}
         <section id="about">
           <About />
         </section>
 
+        {/* Skills */}
         <section id="skills">
           <Skills />
         </section>
 
+        {/* Experience */}
+        <section id="experience">
+          <Experience />
+        </section>
+
+        {/* Education */}
         <section id="education">
           <Education />
         </section>
 
+        {/* Certifications */}
         <section id="certifications">
           <Certifications />
         </section>
 
+        {/* Projects */}
         <section id="projects">
           <Projects />
         </section>
 
+        {/* Contact */}
         <section id="contact">
           <Contact />
         </section>
