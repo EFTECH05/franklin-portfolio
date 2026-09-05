@@ -35,7 +35,7 @@ const experiences = [
     projects: [
       {
         name: "TDH Management Portal",
-        url: "https://tdhmanagementportal.co.za/",
+        url: "https://www.youtube.com/watch?v=tBOZHj6ZsEM&t=26s",
       },
     ],
   },
