@@ -1,0 +1,518 @@
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+
+.contact-section {
+  position: relative;
+  padding: 120px 8%;
+  overflow: hidden;
+}
+
+/* =========================================
+   BACKGROUND EFFECTS
+   ========================================= */
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  top: 10%;
+  left: -250px;
+
+  background: rgba(0, 212, 255, 0.07);
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  pointer-events: none;
+}
+
+.contact-section::after {
+  content: "";
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  right: -200px;
+  bottom: -150px;
+
+  background: rgba(0, 212, 255, 0.05);
+
+  border-radius: 50%;
+
+  filter: blur(110px);
+
+  pointer-events: none;
+}
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.contact-container {
+  position: relative;
+  z-index: 1;
+
+  max-width: 1300px;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   SECTION HEADING
+   ========================================= */
+
+.contact-section .section-heading {
+  margin-bottom: 60px;
+}
+
+.contact-section .section-heading p {
+  margin: 0 0 12px;
+
+  color: #00d4ff;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contact-section .section-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+}
+
+/* =========================================
+   CONTACT CONTENT
+   ========================================= */
+
+.contact-content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: stretch;
+}
+
+/* =========================================
+   CONTACT INTRO
+   ========================================= */
+
+.contact-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 20px 0;
+}
+
+.contact-intro h3 {
+  max-width: 600px;
+
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+
+  font-weight: 700;
+
+  line-height: 1.25;
+
+  letter-spacing: -1px;
+}
+
+.contact-intro p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #a7a7a7;
+
+  font-size: 1rem;
+
+  line-height: 1.9;
+}
+
+/* =========================================
+   CONTACT ACTION CARD
+   ========================================= */
+
+.contact-action {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 25px;
+
+  padding: 40px;
+
+  background: rgba(18, 18, 18, 0.75);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 24px;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+/* =========================================
+   TOP ACCENT LINE
+   ========================================= */
+
+.contact-action::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 40px;
+  right: 40px;
+
+  height: 2px;
+
+  background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+
+  opacity: 0.7;
+}
+
+/* =========================================
+   CARD HOVER
+   ========================================= */
+
+.contact-action:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(0, 212, 255, 0.3);
+
+  background: rgba(22, 22, 22, 0.9);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35),
+    0 0 35px rgba(0, 212, 255, 0.07);
+}
+
+/* =========================================
+   CONTACT ICON
+   ========================================= */
+
+.contact-icon {
+  flex-shrink: 0;
+
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #00d4ff;
+
+  font-size: 1.3rem;
+
+  background: rgba(0, 212, 255, 0.08);
+
+  border: 1px solid rgba(0, 212, 255, 0.25);
+
+  border-radius: 15px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.contact-action:hover .contact-icon {
+  transform: scale(1.08);
+
+  background: rgba(0, 212, 255, 0.15);
+}
+
+/* =========================================
+   ACTION CONTENT
+   ========================================= */
+
+.contact-action-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.contact-action-content > span {
+  margin-bottom: 12px;
+
+  color: #00d4ff;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.contact-action-content h4 {
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: 1.4rem;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+/* =========================================
+   EMAIL BUTTON
+   ========================================= */
+
+.contact-section .primary-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 24px;
+
+  color: #050505;
+
+  background: #00d4ff;
+
+  border: 1px solid #00d4ff;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.2px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-section .primary-btn span {
+  font-size: 1rem;
+
+  transition: transform 0.3s ease;
+}
+
+.contact-section .primary-btn:hover {
+  transform: translateY(-3px);
+
+  color: #050505;
+
+  background: #ffffff;
+
+  border-color: #ffffff;
+
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
+
+.contact-section .primary-btn:hover span {
+  transform: translateX(4px);
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+  .contact-section {
+    padding: 100px 6%;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .contact-intro {
+    padding: 0;
+  }
+
+  .contact-intro p {
+    max-width: 800px;
+  }
+
+  .contact-action {
+    max-width: 800px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 6%;
+  }
+
+  .contact-section .section-heading {
+    margin-bottom: 45px;
+  }
+
+  .contact-section .section-heading h2 {
+    font-size: 3rem;
+  }
+
+  .contact-content {
+    gap: 35px;
+  }
+
+  .contact-intro h3 {
+    font-size: 1.8rem;
+
+    margin-bottom: 20px;
+  }
+
+  .contact-intro p {
+    font-size: 0.95rem;
+
+    line-height: 1.8;
+  }
+
+  .contact-action {
+    padding: 30px;
+
+    gap: 20px;
+
+    border-radius: 20px;
+  }
+
+  .contact-action::before {
+    left: 30px;
+    right: 30px;
+  }
+
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+
+    font-size: 1.1rem;
+
+    border-radius: 12px;
+  }
+
+  .contact-action-content h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 70px 5%;
+  }
+
+  .contact-section .section-heading p {
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+  }
+
+  .contact-section .section-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-content {
+    gap: 30px;
+  }
+
+  .contact-intro h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-intro p {
+    font-size: 0.9rem;
+  }
+
+  .contact-action {
+    flex-direction: column;
+
+    padding: 25px;
+
+    gap: 18px;
+  }
+
+  .contact-action::before {
+    left: 25px;
+    right: 25px;
+  }
+
+  .contact-action-content h4 {
+    font-size: 1.1rem;
+
+    margin-bottom: 20px;
+  }
+
+  .contact-section .primary-btn {
+    width: 100%;
+
+    padding: 13px 20px;
+  }
+}
+
+/* =========================================
+   EXTRA SMALL DEVICES
+   ========================================= */
+
+@media (max-width: 360px) {
+  .contact-section {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .contact-section .section-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-action {
+    padding: 20px;
+  }
+
+  .contact-action-content h4 {
+    font-size: 1rem;
+  }
+}

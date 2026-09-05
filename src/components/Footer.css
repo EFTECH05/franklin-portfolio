@@ -1,0 +1,171 @@
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+  position: relative;
+
+  width: 100%;
+
+  padding: 35px 8%;
+
+  background: #080808;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  overflow: hidden;
+}
+
+/* =========================================
+   SUBTLE BACKGROUND GLOW
+   ========================================= */
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  left: 50%;
+  bottom: -250px;
+
+  transform: translateX(-50%);
+
+  background: rgba(0, 212, 255, 0.06);
+
+  border-radius: 50%;
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+/* =========================================
+   FOOTER CONTENT
+   ========================================= */
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   FOOTER TEXT
+   ========================================= */
+
+.footer p {
+  margin: 0;
+
+  color: #777777;
+
+  font-size: 0.78rem;
+
+  font-weight: 500;
+
+  line-height: 1.6;
+
+  text-align: center;
+
+  transition: color 0.3s ease;
+}
+
+.footer:hover p {
+  color: #a7a7a7;
+}
+
+/* =========================================
+   FOOTER LINES
+   ========================================= */
+
+.footer-line {
+  width: 80px;
+
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 212, 255, 0.4),
+    transparent
+  );
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 6%;
+  }
+
+  .footer-content {
+    gap: 18px;
+  }
+
+  .footer-line {
+    width: 50px;
+  }
+
+  .footer p {
+    font-size: 0.72rem;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 5%;
+  }
+
+  .footer-content {
+    gap: 12px;
+  }
+
+  .footer-line {
+    width: 30px;
+  }
+
+  .footer p {
+    font-size: 0.68rem;
+  }
+}
+
+/* =========================================
+   EXTRA SMALL DEVICES
+   ========================================= */
+
+@media (max-width: 360px) {
+  .footer {
+    padding: 22px 4%;
+  }
+
+  .footer-content {
+    gap: 8px;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  .footer p {
+    font-size: 0.65rem;
+  }
+}
