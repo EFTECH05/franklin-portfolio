@@ -498,6 +498,85 @@ function Projects() {
       github: "https://github.com/EFTECH05/MunicipalServicesApp",
       youtubeEmbed: "https://www.youtube-nocookie.com/embed/grHwhgtqSAE",
     },
+    {
+      number: "08",
+      title: "Siya-Fund – Stokvel Savings & Loan Management Platform",
+      period: "Aug 2026 – Present",
+      icon: "💰",
+      description:
+        "A mobile and web-based financial management application developed as part of a five-month Work Integrated Learning (WIL) project. Siya-Fund aims to digitise the management of South African stokvel savings groups by helping members create and join groups, manage savings contributions, view transactions, submit loan requests, and manage membership through a simple, user-friendly platform.",
+      role: "UI/UX Designer · Lead Developer · Project Manager & QA (Final Sprint)",
+      teamProject: true,
+      teamMembers: [
+        {
+          name: "David Ayowa",
+          role: "Lead Developer / Developer",
+          linkedin: "https://www.linkedin.com/in/david-ayowa-a27110287/",
+        },
+        {
+          name: "Ishka Sewshanker",
+          role: "Business Analyst / Developer",
+          linkedin: "https://www.linkedin.com/in/ishka-sewshanker-11a296246/",
+        },
+      ],
+      technologies: [
+        "React Native",
+        "Expo",
+        "Expo Router",
+        "TypeScript",
+        "Firebase Authentication",
+        "Cloud Firestore",
+        "Node.js",
+        "Express.js",
+        "Firebase Admin SDK",
+      ],
+      features: [
+        "User Registration and Login",
+        "Email OTP Verification",
+        "Password Reset",
+        "Savings Group Creation",
+        "Joining Groups with Unique Codes",
+        "Group Member Management",
+        "Contribution Management",
+        "Transaction History",
+        "Loan Requests",
+        "Role-Based Access Control",
+        "Super-Admin Dashboard",
+        "Mobile and Web Support",
+      ],
+      security: [
+        "Firebase Authentication",
+        "Email OTP Verification",
+        "Role-Based Access Control",
+        "Controlled Administrative Access",
+        "Server-Side Firebase Operations",
+      ],
+      architecture: [
+        "React Native and Expo Frontend",
+        "Expo Router Navigation",
+        "Controller Layer",
+        "Service Layer",
+        "Firebase Authentication",
+        "Cloud Firestore",
+        "Node.js and Express OTP Service",
+      ],
+      contribution: [
+        "Contributed to UI/UX design during the earlier stages",
+        "Contribute to application development as Lead Developer",
+        "Taking on project coordination responsibilities during the final sprint",
+        "Taking on Quality Assurance responsibilities during the final sprint",
+        "Supporting application testing and defect verification",
+      ],
+      details: {
+        project: "Siya-Fund Stokvel Savings and Loan Management Platform",
+        type: "Work Integrated Learning 3 (WIL 3)",
+        duration: "Five-month project",
+        startDate: "August 2026",
+        status: "In Development",
+      },
+      github: "https://github.com/EFTECH05/Siya-Fund",
+      youtubeEmbed: "https://www.youtube.com/embed/_7wb0Phdr5s",
+    },
   ];
 
   return (
@@ -526,7 +605,6 @@ function Projects() {
               <strong>{project.role}</strong>
             </div>
 
-            {/* Team members and LinkedIn profiles */}
             {project.teamMembers?.length > 0 && (
               <div className="project-team">
                 <h4>Team Members</h4>
