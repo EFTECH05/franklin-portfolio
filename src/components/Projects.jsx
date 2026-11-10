@@ -510,12 +510,12 @@ function Projects() {
       teamMembers: [
         {
           name: "David Ayowa",
-          role: "Lead Developer / Developer",
+          role: "Software Developer Intern · Payment24",
           linkedin: "https://www.linkedin.com/in/david-ayowa-a27110287/",
         },
         {
           name: "Ishka Sewshanker",
-          role: "Business Analyst / Developer",
+          role: "Software Developer · FNB South Africa",
           linkedin: "https://www.linkedin.com/in/ishka-sewshanker-11a296246/",
         },
       ],
