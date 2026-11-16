@@ -1,11 +1,17 @@
 import React from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
+import { projects } from "../components/Projects";
 import "./ProjectDetails.css";
 
 function ProjectDetails() {
   const { id } = useParams();
   const location = useLocation();
-  const project = location.state?.project;
+  const project =
+    location.state?.project ??
+    projects.find((item) => item.number === id) ??
+    projects.find(
+      (item) => String(item.number) === String(id ?? "").padStart(2, "0")
+    );
 
   /*
     Project data is currently passed through React Router state.

@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import "./Projects.css";
 
-function Projects() {
-  const projects = [
+export const projects = [
     {
       number: "01",
       title: "GlobalTrust Banking Management System",
@@ -579,6 +578,7 @@ function Projects() {
     },
   ];
 
+function Projects() {
   return (
     <section id="projects" className="section projects-section">
       <div className="section-heading">
