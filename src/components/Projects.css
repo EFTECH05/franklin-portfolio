@@ -44,9 +44,9 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
+  gap: 22px;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1150px;
   margin: 0 auto;
   align-items: stretch;
 }
@@ -62,7 +62,8 @@
   flex-direction: column;
   min-width: 0;
   min-height: 100%;
-  padding: 32px;
+  padding: 24px;
+  box-sizing: border-box;
 
   background: linear-gradient(
     145deg,
@@ -71,7 +72,7 @@
   );
 
   border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 20px;
+  border-radius: 18px;
   overflow: hidden;
 
   -webkit-backdrop-filter: blur(18px);
@@ -123,7 +124,7 @@
 }
 
 .project-card:hover {
-  transform: translateY(-7px);
+  transform: translateY(-5px);
   border-color: rgba(0, 212, 255, 0.32);
 
   background: linear-gradient(
@@ -133,8 +134,8 @@
   );
 
   box-shadow:
-    0 24px 55px rgba(0, 0, 0, 0.24),
-    0 0 30px rgba(0, 212, 255, 0.045);
+    0 20px 45px rgba(0, 0, 0, 0.22),
+    0 0 25px rgba(0, 212, 255, 0.045);
 }
 
 .project-card:hover::before {
@@ -153,8 +154,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 27px;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 .project-number {
@@ -162,8 +163,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
 
   color: #00d4ff;
   background: linear-gradient(
@@ -173,9 +174,9 @@
   );
 
   border: 1px solid rgba(0, 212, 255, 0.25);
-  border-radius: 12px;
+  border-radius: 11px;
 
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 750;
   letter-spacing: 1px;
 
@@ -195,14 +196,14 @@
   align-items: center;
   justify-content: center;
   max-width: 75%;
-  padding: 7px 11px;
+  padding: 6px 10px;
 
   color: #a4a4b2;
   background: rgba(255, 255, 255, 0.035);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 7px;
 
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 500;
   line-height: 1.5;
   text-align: right;
@@ -213,12 +214,12 @@
 ========================================= */
 
 .project-card h3 {
-  margin: 0 0 15px;
+  margin: 0 0 12px;
   color: #f5f7fb;
-  font-size: 1.38rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.45;
-  letter-spacing: -0.45px;
+  line-height: 1.4;
+  letter-spacing: -0.35px;
   overflow-wrap: anywhere;
   transition: color 0.3s ease;
 }
@@ -232,11 +233,11 @@
 ========================================= */
 
 .project-description {
-  margin: 0 0 24px;
+  margin: 0 0 19px;
   color: #a0a2ad;
-  font-size: 0.89rem;
+  font-size: 0.86rem;
   font-weight: 400;
-  line-height: 1.9;
+  line-height: 1.75;
   overflow-wrap: anywhere;
 }
 
@@ -247,10 +248,10 @@
 .project-role {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 7px;
 
-  margin-bottom: 24px;
-  padding: 14px 16px;
+  margin-bottom: 19px;
+  padding: 12px 14px;
 
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.055);
@@ -260,17 +261,17 @@
 
 .project-role span {
   color: #00d4ff;
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.4px;
 }
 
 .project-role strong {
   color: #dedee7;
-  font-size: 0.84rem;
+  font-size: 0.81rem;
   font-weight: 500;
-  line-height: 1.7;
+  line-height: 1.6;
   overflow-wrap: anywhere;
 }
 
@@ -279,13 +280,13 @@
 ========================================= */
 
 .project-team {
-  margin: 0 0 24px;
+  margin: 0 0 19px;
 }
 
 .project-team h4 {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   color: #e6e8ef;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 650;
   letter-spacing: 0.2px;
 }
@@ -293,20 +294,20 @@
 .team-members-list {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 8px;
 }
 
 .team-member {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
   min-width: 0;
-  padding: 12px 14px;
+  padding: 10px 12px;
 
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 11px;
+  border-radius: 10px;
 
   transition:
     background 0.25s ease,
@@ -329,7 +330,7 @@
 
 .team-member-info strong {
   color: #e8eaf0;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   line-height: 1.5;
   overflow-wrap: anywhere;
@@ -337,7 +338,7 @@
 
 .team-member-info span {
   color: #8e919e;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   line-height: 1.5;
 }
 
@@ -346,15 +347,15 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 36px;
-  height: 36px;
+  width: 33px;
+  height: 33px;
 
   color: #70baff;
   background: rgba(10, 102, 194, 0.12);
   border: 1px solid rgba(10, 102, 194, 0.22);
-  border-radius: 9px;
+  border-radius: 8px;
 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
 
   transition:
@@ -384,27 +385,27 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 9px;
+  gap: 7px;
 
   margin-top: auto;
-  margin-bottom: 25px;
-  padding-top: 6px;
+  margin-bottom: 20px;
+  padding-top: 5px;
 }
 
 .project-tags span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 30px;
+  min-height: 27px;
   max-width: 100%;
-  padding: 6px 11px;
+  padding: 5px 9px;
 
   color: #b5b8c4;
   background: rgba(255, 255, 255, 0.035);
   border: 1px solid rgba(255, 255, 255, 0.085);
   border-radius: 7px;
 
-  font-size: 0.69rem;
+  font-size: 0.66rem;
   font-weight: 500;
   line-height: 1.4;
   overflow-wrap: anywhere;
@@ -432,7 +433,7 @@
 .project-links {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-top: auto;
   padding-top: 5px;
 }
@@ -460,15 +461,15 @@
 
 .primary-project-link {
   width: 100%;
-  min-height: 48px;
-  padding: 12px 18px;
+  min-height: 44px;
+  padding: 10px 16px;
 
   color: #071116;
   background: linear-gradient(135deg, #00d4ff, #56e4ff);
   border: 1px solid #00d4ff;
   border-radius: 9px;
 
-  font-size: 0.83rem;
+  font-size: 0.8rem;
   font-weight: 750;
   text-align: center;
   line-height: 1.5;
@@ -495,13 +496,13 @@
 
 @media (max-width: 1000px) {
   .projects-grid {
-    grid-template-columns: 1fr;
-    max-width: 750px;
-    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 850px;
+    gap: 18px;
   }
 
   .project-card {
-    padding: 30px;
+    padding: 20px;
   }
 }
 
@@ -509,17 +510,19 @@
    MOBILE
 ========================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .projects-section {
     padding: 25px 0;
   }
 
   .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
     gap: 18px;
   }
 
   .project-card {
-    padding: 23px;
+    padding: 20px;
     border-radius: 16px;
   }
 
@@ -528,7 +531,7 @@
   }
 
   .project-top {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 
   .project-number {
@@ -543,55 +546,55 @@
   }
 
   .project-card h3 {
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: 1.12rem;
+    line-height: 1.45;
   }
 
   .project-description {
-    font-size: 0.84rem;
-    line-height: 1.8;
+    font-size: 0.83rem;
+    line-height: 1.7;
   }
 
   .project-role {
-    padding: 12px 13px;
-  }
-
-  .project-role strong {
-    font-size: 0.8rem;
-  }
-
-  .team-member {
     padding: 11px 12px;
   }
 
+  .project-role strong {
+    font-size: 0.78rem;
+  }
+
+  .team-member {
+    padding: 10px 11px;
+  }
+
   .team-member-info strong {
-    font-size: 0.81rem;
+    font-size: 0.79rem;
   }
 
   .team-member-info span {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
   }
 
   .linkedin-link {
-    width: 34px;
-    height: 34px;
-    font-size: 1.1rem;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
   }
 
   .project-tags {
     gap: 7px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 
   .project-tags span {
-    min-height: 27px;
-    padding: 5px 9px;
-    font-size: 0.65rem;
+    min-height: 26px;
+    padding: 5px 8px;
+    font-size: 0.64rem;
   }
 
   .primary-project-link {
-    min-height: 46px;
-    font-size: 0.8rem;
+    min-height: 43px;
+    font-size: 0.78rem;
   }
 }
 
@@ -601,12 +604,12 @@
 
 @media (max-width: 400px) {
   .project-card {
-    padding: 19px;
+    padding: 17px;
   }
 
   .project-top {
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
   }
 
   .project-period {
@@ -615,15 +618,15 @@
   }
 
   .project-card h3 {
-    font-size: 1.08rem;
+    font-size: 1.05rem;
   }
 
   .project-description {
-    font-size: 0.8rem;
+    font-size: 0.79rem;
   }
 
   .project-role strong {
-    font-size: 0.77rem;
+    font-size: 0.75rem;
   }
 
   .project-links {

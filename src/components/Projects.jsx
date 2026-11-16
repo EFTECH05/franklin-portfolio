@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import "./Projects.css";
 
-export const projects = [
+function Projects() {
+  const projects = [
     {
       number: "01",
       title: "GlobalTrust Banking Management System",
@@ -52,6 +53,7 @@ export const projects = [
       github: "https://github.com/EFTECH05/APPLICATION_TASK123",
       youtubeEmbed: "https://www.youtube-nocookie.com/embed/0w5iqUrRZCw",
     },
+
     {
       number: "02",
       title: "Logistica – Global Logistics Management System",
@@ -108,6 +110,7 @@ export const projects = [
         "https://github.com/EFTECH05/Logistics-Management-System-School-Project-ASP.net.core-Part2",
       youtubeEmbed: "https://www.youtube-nocookie.com/embed/tO32RKTxETs",
     },
+
     {
       number: "03",
       title: "TDH Management System",
@@ -181,6 +184,7 @@ export const projects = [
       github: "https://github.com/EFTECH05/TDHSystem",
       youtubeEmbed: "https://www.youtube-nocookie.com/embed/tBOZHj6ZsEM",
     },
+
     {
       number: "04",
       title: "Vibez – Music Streaming Mobile App",
@@ -247,6 +251,7 @@ export const projects = [
       github: "https://github.com/KL-Mdanjelwa/VibezApp1",
       mobileProject: true,
     },
+
     {
       number: "05",
       title: "EventEase – Cloud-Based Venue Booking System",
@@ -316,6 +321,7 @@ export const projects = [
       },
       github: "https://github.com/EFTECH05/Part1Cloud",
     },
+
     {
       number: "06",
       title: "Cloud-Based Retail Management System",
@@ -396,13 +402,14 @@ export const projects = [
       youtubeEmbed: "https://www.youtube-nocookie.com/embed/OVbIeN8GSlM",
       github: "https://github.com/EFTECH05/Project-1-Azure-Storage-Solution-",
     },
+
     {
       number: "07",
-      title: "Municipal Services Application – Parts 1 & 2",
-      period: "Aug 2026 – Present",
+      title: "Municipal Services Application",
+      period: "Aug 2026 – Nov 2026",
       icon: "🏛️",
       description:
-        "An evolving municipal services desktop application developed in C# Windows Forms as part of my Advanced Application Development (AAPD7112) Portfolio of Evidence at IIE Rosebank College. Part 1 implements municipal issue reporting, including location and category selection, detailed descriptions, optional file attachments, progress indicators, and SQL Server persistence. Part 2 extends the application with Local Events and Announcements, event search and date filtering, recent search history, category-based recommendations, administrator event management, and configurable email notifications.",
+        "A municipal services desktop application developed in C# Windows Forms as part of my Advanced Application Development (AAPD7112) Portfolio of Evidence at IIE Rosebank College. The completed application covers all three parts: municipal issue reporting, Local Events and Announcements, and service request status tracking. It includes event search and date filtering, recent search history, category-based recommendations, administrator event management, configurable email notifications, and database integration.",
       role: "Software Developer",
       teamProject: false,
       technologies: [
@@ -439,7 +446,7 @@ export const projects = [
         "Event Editing and Deletion",
         "SQL Server Database Integration",
         "Configurable Email Notifications",
-        "Service Request Status — Planned for Part 3",
+        "Service Request Status Tracking",
       ],
       security: [
         "User Authentication",
@@ -482,21 +489,21 @@ export const projects = [
         "Applied collections and data structures to event management",
         "Implemented administrator event creation, editing, and deletion",
         "Configured Gmail SMTP email notifications for new events",
-        "Prepared the application for future project extensions",
+        "Completed Part 3 with service request status tracking",
       ],
       details: {
         module: "AAPD7112 – Advanced Application Development",
         project: "Municipal Services Application for South Africa",
         type: "Portfolio of Evidence (POE)",
         institution: "IIE Rosebank College",
-        status: "🚧 Currently in Development — Parts 1 & 2",
-        nextStage: "Part 3 — Service Request Status",
+        status: "Completed — Parts 1, 2 and 3",
         database: "MunicipalServicesDB",
         framework: ".NET Framework 4.7.2",
       },
       github: "https://github.com/EFTECH05/MunicipalServicesApp",
       youtubeEmbed: "https://www.youtube-nocookie.com/embed/LgZvm3tG780",
     },
+
     {
       number: "08",
       title: "Siya-Fund – Stokvel Savings & Loan Management Platform",
@@ -578,7 +585,6 @@ export const projects = [
     },
   ];
 
-function Projects() {
   return (
     <section id="projects" className="section projects-section">
       <div className="section-heading">
